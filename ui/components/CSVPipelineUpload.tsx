@@ -54,7 +54,7 @@ const CSVPipelineUpload: React.FC<CSVPipelineUploadProps> = ({
   const [isFetchingFiles, setIsFetchingFiles] = useState(false);
   const [filesError, setFilesError] = useState<string | null>(null);
 
-  const API_BASE_URL = "http://localhost:8333/api/v1";
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   // Fetch pipeline files when pipeline is completed
   const fetchPipelineFiles = async (runId: number) => {
