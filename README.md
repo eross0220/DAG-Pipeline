@@ -85,6 +85,9 @@ cp .env.example .env
 cd ..
 ```
 
+Use Frontend env as it is in env.example.
+Just update the name
+
 #### Configure Required Variables
 
 **Backend (.env file):**
